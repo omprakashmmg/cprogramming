@@ -1,0 +1,14 @@
+//24.What is the output of the following code?
+#include<stdio.h>
+void main()
+{
+int x = 1 ;
+switch(x)
+{
+x = x + 1;
+case 1: printf("one"); break;
+case 2: printf("two"); break;
+default : printf("three");
+}
+ }
+// OUTPUT => one

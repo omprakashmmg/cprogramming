@@ -1,0 +1,183 @@
+basic introduction of c
+------------------------------------>
+
+-----------------------------------------
+basic structure of c program
+-------------------------------------------
+=============================================
+variable
+=====================================
+  ->variable are some any storage area,which can hold a value and it's value may be change any where during the execution of progaram.
+
+note- 
+1. declaratoon of valiable=> EACH VARIAVLE in c .should be declare once at the top of pragram . without declartioon you can not use any variable in your program.
+    sytX-: DATATYPE VARAIAVLENAME;
+	
+	
+2. definition of variable=> assign value to the variable 
+a. direct intialization/compile time intialization 
+    var=50;
+	
+b. user input /run time initialization
+    scanf("formate_specifires",variable list with &);
+	scanf(%f",&var);-&- denote the memory address of variable
+	int a; floatf;
+	scanf("%d",&a);
+	scanf("%d %f",&a,&f);
+	
+c BY Expression /calculation
+    A=b+10;
+    
+    
+==============================================================================================================================================    
+charcater input special functions:
+
+getch():getch() is used to input  a single character user.
+getch() function reads the inputed value from the screen and saves the  value a character type variable.
+
+wworkikng:getch() permits user to input only a single key on the output screen ,next of program executes without waiting to press enter , as soon as inputs a sinngle character.
+
+ sytax:
+ char ch;
+ ch=getch;
+ 
+ character inputed by user by using getch() does not appear onoutput screen.
+ ============================================================================================================================================================= 
+ getche ():getche() also permits user to input only a single   characterr and character inputed by user apperars in the output screen and next line if program executes without waiting for enter key.
+ 
+ ex:// war to input a charcter and print the 
+  character
+       // write a program input a characcter and print the inputed character .
+#include<stdio.h>
+void main()
+{
+	char ch;
+	printf("please enter a single character : ");
+	ch=getche()
+	printf(" your inputed character is%c",ch);
+}
+================================================================================================================
+
+getchar():getchar() work same as the scanf() ,but getchar is a unformated input function so you do not need to add any  format specifier here.
+  sytax: char val;
+         val=getchar();
+=======================================================================================================================================
+
+system("pause"): this function use for only hold the output window,its library #include<stdlib.h> header file in available.  it work as like getch().
+===========================================================================================
+OPEREATOR=> operators are some specials,sumbol ,pre-defined in hlibrary, that is used for the special functionality.
+            Each operator has it's own use,when ever we nedd this we can use the operators in any statement of program.
+            operators are always used with operends.
+            su[[ose a statement:
+            A=A+B: here a,b is the opered and + is the operator
+                   = is also operator .
+                   
+            UNARY OPERATOR: use with one operand ,like increment -decrement operator.
+            
+            BIANARY OPEARATOR: use with minimum 2 operend like :+,-,*,>,etc.
+            
+            TERNARY OPERATOR: used with minimum 3 operend like :condtional operator.
+            
+            
+            based on the working operators are   divided into many category:
+            
+            1.MATHEMATICAL OPERATOR.
+            2.RELATIONAL OPEARTOR.
+            3.LOGICAL OPERATOR
+            4.ASSIGNMENT OPERATOR.
+            5.INCEREMENT AND DECREMENT OPERATOR.
+            6.CONDITIONAL OPERATOR.
+            7.BITWISE OPERATOR.
+            
+            
+            1.Arithmatical operator:  this operator is used for mathematical operations. it  used with numeric  values . it  is a binary operator that means it needs min.2 operend to be used.
+              +:addition
+              -:substraction
+              *:multiply
+              /:division
+              %:modular division
+              
+              
+              precedence of operator: 
+                      *
+                      /: it  returns always a integer number if both operend are integer .it returns a float value if any one opreand is float.
+				
+                           /:20/3=6
+                           20.0/3=6.666
+                      % : it is called as module operator. it returns remaining value after  the division of two integer type values. it can not ve applied on floating type value;
+                      
+                          int n1=40,n2=9;
+                          n1/n2=4
+                          n1%n2=division remainder
+                      +
+                      -
+                      =
+                      
+----------------------------------------------------------------------------------------------------------------------------------------
+            
+  BITWISE OPERATOR:
+            bitwise operator are used to to perform some task on binary digits. linke 0&1;
+			  &: bitwise and
+			  |: bitwie or
+			  ^:bitwise X-or  
+			  
+			  
+		   
+            
+            
+            
+   ----------------------------------------------------------------------------------------------------------------------------
+   type of variablr and variabe scope->
+     
+	 ------------------------------------------------------------------------------------------------------------------------------
+const keyword:  const is the keyword that is used to define constants within the block.
+      const datatype constant_name=value;
+--------------------------------------------------------------------------------------------------------------------------------
+      static varibel:
+           static variable are  a type of variable which lifetime  does not destroy even after the closing of block.Static  variable remains it's value safe in the memory even block of variabel has been completed.
+            normal variable destroy after the closing of block ,but static variable not.
+               sytax:
+                 static datatype variable_name;
+                  
+                  
+                #include<stdio.h>
+                void main()
+                { 
+                int a,b;
+                static int count=0;
+                printf("enter two number");
+                scanf("%d%d",&a,&b);
+                count=count+a+b;
+                printf(" count value is : %d",count);
+            }
+            
+            
+------------------------------------------------------------------------------------------------------------------------
+control statement:
+  1. conditional statement:  
+                        conditon statement are lines of program that produce output always true/false.
+                        condition can be applied by using relational or logical opeerators .
+						ralational or logicla expression  always generate output in 0 or1
+						i.e. true or false
+				 
+    a. if statement:
+                 where condition are appliey=d by using if keyword .
+                 
+      1. simple if statement:
+                           where program has only a single oair of if without else is known as simple if programs.
+                           
+                           syntax:
+                               if(condition)
+                               {
+                               //block of if
+                   }
+                    
+      2. if-else statemetn
+      3.ladder if statemetn
+      4.nested if statement
+    b.switch statement
+  2. iteration statemtn/looping statement:=> 
+                                      
+     
+  3. branching staement/jumping statement/transfer statemetn
+----------------------------------------------------------------------------------------------------------------------------                

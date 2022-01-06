@@ -1,0 +1,16 @@
+// 4.	Write a program to find sum of first n numbers.
+#include<stdio.h>
+void main()
+{
+	int i,sum,num=0;
+	printf("Enter a number : ");
+	scanf("%d",&sum);
+	for(i=1;i<=sum;i++)
+	{
+		printf("%d\n",i);
+		num=num+i;
+	}
+	printf("total of first n numbers :  %d\n",num);
+
+	
+}
